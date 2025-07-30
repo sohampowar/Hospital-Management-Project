@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="table-container">
+    <center>
+    {% if request.user.is_authenticated %}
+        <h3>Home Page</h3>
+        <hr>
+        <h2>Search Form</h2>
+        <form action="">
+            <input type="text" placeholder="Search here..." name="q">
+            <input type="submit">
+        </form>
+<hr>
+        <h2>Patient List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+                    <th>Consulting</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in all_patients %}
+                <tr>
+                    <td>{{ i.name }}</td>
+                    <td>{{ i.age }}</td>
+                    <td>{{ i.gender }}</td>
+                    <td>{{ i.address }}</td>
+                    <td>{{ i.contact }}</td>
+                    <td>{{ i.consulting }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{% url 'edit_patient' %}" class="btn">Edit Details</a>
+    {% else %}
+        <h2>You are not logged in. <a href="{% url 'login_' %}">Login here</a></h2>
+    {% endif %}
+    </center>
+</div>
+{% endblock %}

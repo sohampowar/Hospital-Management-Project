@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <center>
+        <h2>Updating Patient detials</h2>
+    
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="">NAME</label>
+            <input type="text" name="name" required> <br>
+    
+            <label for="">AGE</label>
+            <input type="text" name="age" required> <br>
+    
+            <label for="">GENDER</label>
+            <input type="text" name="gender" required> <br>
+    
+            <label for="">ADDRESS</label>
+            <input type="text" name="address" required> <br>
+    
+            <label for="">CONTACT</label>
+            <input type="text" name="contact" required> <br>
+    
+
+            <label for="">CONSULTING</label>
+            <input type="text" name="consulting" required> <br>
+    
+            <input type="submit" name="submit">
+    
+            
+        </form>
+    </center>
+{% endblock %}
