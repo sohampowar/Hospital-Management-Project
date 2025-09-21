@@ -12,7 +12,6 @@
 
 <hr>
 
-
 <h2>📌 Project Objective</h2>
 <ul>
     <li>Manage patient registrations efficiently</li>
@@ -20,6 +19,19 @@
     <li>Maintain accurate medical records</li>
     <li>Provide admins and staff with easy-to-use dashboards</li>
 </ul>
+
+<hr>
+
+<h2>📊 Screenshots</h2>
+
+<h3>Home Page</h3>
+<img src="output1.png" alt="Home Page" style="width:80%; border-radius:10px; box-shadow:0px 4px 10px rgba(0,0,0,0.2);">
+
+<h3>Patient List</h3>
+<img src="Output2.png" alt="Patient List" style="width:80%; border-radius:10px; box-shadow:0px 4px 10px rgba(0,0,0,0.2);">
+
+<h3>Admin Dashboard</h3>
+<img src="output3.png" alt="Admin Dashboard" style="width:80%; border-radius:10px; box-shadow:0px 4px 10px rgba(0,0,0,0.2);">
 
 <hr>
 
@@ -36,18 +48,18 @@
 <h2>📂 Project Structure</h2>
 <pre>
 Hospital-Management-System/
-│── manage.py           # Django management script
-│── myproject/          # Project settings folder
+│── manage.py
+│── myproject/
 │   │── settings.py
 │   │── urls.py
 │   │── wsgi.py
-│── apps/               # All Django apps (patients, doctors, appointments, etc.)
-│── templates/          # HTML templates
-│── static/             # CSS, JS, images
-│── db.sqlite3          # Database file
-│── requirements.txt    # Dependencies
-│── README.html         # Project documentation (HTML)
-│── images/             # Screenshots or visual assets
+│── apps/
+│── templates/
+│── static/
+│── db.sqlite3
+│── requirements.txt
+│── README.html
+│── images/
 </pre>
 
 <hr>
@@ -93,10 +105,10 @@ Hospital-Management-System/
 <h2>🚀 How to Run Locally</h2>
 <ol>
     <li>Clone the repository
-        <pre>git clone https://github.com/your-username/Hospital-Management-System.git</pre>
+        <pre>git clone https://github.com/sohampowar/Hospital-Management-Project.git</pre>
     </li>
     <li>Navigate to the project folder
-        <pre>cd Hospital-Management-System</pre>
+        <pre>cd Hospital-Management-Project</pre>
     </li>
     <li>Create a virtual environment
         <pre>python -m venv venv</pre>
@@ -126,7 +138,7 @@ python manage.py runserver
 
 <h2>🙋‍♂️ Author</h2>
 <p>
-<b>Your Name</b><br>
+<b>Soham U Powar</b><br>
 B.Tech in Computer Science & Engineering<br>
 GitHub: <a href="https://github.com/sohampowar">SohampowarGithub</a><br>
 LinkedIn: <a href="https://www.linkedin.com/in/soham-powar-383593271/">SohampowarLinkedIn</a>
